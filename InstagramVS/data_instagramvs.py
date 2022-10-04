@@ -298,8 +298,5 @@ data = [
         'follower_count': 47,
         'description': 'Club Basketball Competition',
         'country': 'United States'
-    },
-    {
-
     }
 ]
