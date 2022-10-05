@@ -43,7 +43,7 @@ while play:
             if user_add<money_need:
                 print("Sorry that's not enough money. Money refunded.")
             else:
-                money_machine += float(user_add-money_need)
+                money_machine += money_need
                 print(doing_coffe())
     elif coffee_type == "off":
         play = False
