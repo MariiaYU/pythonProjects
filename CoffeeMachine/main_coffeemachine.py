@@ -1,5 +1,5 @@
 from menu_coffeemachine import MENU, resources
-def doing_coffe():
+def doing_coffee():
     global resources
     machine_water = resources['water']
     machine_milk = resources['milk']
@@ -44,13 +44,15 @@ while play:
                 print("Sorry that's not enough money. Money refunded.")
             else:
                 money_machine += money_need
-                print(doing_coffe())
+                returned_money = round(user_add - money_need, 2)
+                print(f"Returned money: ${returned_money}")
+                print(doing_coffee())
     elif coffee_type == "off":
         play = False
     elif coffee_type == "report":
         print(f"Machine resources:\nWater: {resources['water']};\nMilk: {resources['milk']};\nCoffee: {resources['coffee']};")
         money_machine = float("{:.2f}".format(money_machine))
-        print(f"Money: {money_machine}.")
+        print(f"Money: ${money_machine}.")
 
 
 
