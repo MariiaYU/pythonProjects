@@ -48,9 +48,9 @@ while play:
     elif coffee_type == "off":
         play = False
     elif coffee_type == "report":
-        print(f"Machine resources: {resources}")
+        print(f"Machine resources:\nWater: {resources['water']};\nMilk: {resources['milk']};\nCoffee: {resources['coffee']};")
         money_machine = float("{:.2f}".format(money_machine))
-        print(f"Money: {money_machine}")
+        print(f"Money: {money_machine}.")
 
 
 
