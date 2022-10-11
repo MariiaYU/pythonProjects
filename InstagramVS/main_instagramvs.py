@@ -1,4 +1,4 @@
-# from replit import clear
+from replit import clear
 import random
 from logo_instagramvs import logo, vs
 from data_instagramvs import data
@@ -27,18 +27,18 @@ while play:
 
     if who == "a" and followers_A >= followers_B:
         scores += 1
-        # clear()
+        clear()
         print(logo)
         person_A = person_B
         person_B = random.choice(data)
     elif who == "b" and followers_B >= followers_A:
         scores += 1
-        # clear()
+        clear()
         print(logo)
         person_A = person_B
         person_B = random.choice(data)
     else:
-        # clear()
+        clear()
         print(logo)
         print("You lose!")
         play = False
