@@ -56,7 +56,10 @@ class SeparateLine(Turtle):
         self.hideturtle()
         self.setx(0)
         self.sety(300)
-        self.goto(0,-300)
+        self.goto(0, -300)
+        self.goto(0, -70)
+        self.circle(radius=70)
+
 
 
 
