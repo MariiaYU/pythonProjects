@@ -10,6 +10,7 @@ class Food(Turtle):
     def __init__(self):
         super().__init__()
         self.shape("turtle")
+        self.setheading(90)
         self.penup()
         self.shapesize(stretch_len=1, stretch_wid=1)
         self.color(random.choice(COLOR_LIST))
