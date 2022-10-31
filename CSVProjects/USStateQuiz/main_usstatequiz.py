@@ -10,8 +10,6 @@ turtle.shape(image)
 
 data = pandas.read_csv("50_states.csv")
 list_of_all_states = data["state"].to_list()
-# def get_c(x,y):
-#     print(x,y)
 
 
 def user_state(state):
@@ -19,6 +17,7 @@ def user_state(state):
     y_cor = int(state_data.y)
     x_cor = int(state_data.x)
     return x_cor, y_cor
+
 
 def write_state_name(coordinate, user_answer):
     user_state = turtle.Turtle()
