@@ -32,7 +32,6 @@ how_many_user_guessed = 0
 all_user_states = []
 game_is_on = True
 while game_is_on:
-
     answer_state = (screen.textinput(title=f"Guess the State: {how_many_user_guessed}/{how_many_states}",
                                      prompt="What is another state name?")).title()
     if answer_state in list_of_all_states:
@@ -41,5 +40,13 @@ while game_is_on:
             state_coordinate = user_state(answer_state)
             write_state_name(state_coordinate, answer_state)
             how_many_user_guessed += 1
+
+    if how_many_user_guessed == how_many_states:
+        text = turtle.Turtle()
+        text.penup()
+        text.hideturtle()
+        text.goto(0, 260)
+        text.write("You have guessed all US States!", align="center", font=('Arial', 30, 'normal'))
+        game_is_on = False
 
 turtle.mainloop()
