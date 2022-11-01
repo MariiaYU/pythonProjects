@@ -35,14 +35,12 @@ while game_is_on:
     answer_state = (screen.textinput(title=f"Guess the State: {how_many_user_guessed}/{how_many_states}",
                                      prompt="What is another state name?")).title()
     if answer_state == "Exit":
-        missing_states = []
-        for state in list_of_all_states:
-            if state not in all_user_states:
-                missing_states.append(state)
+        missing_states = [state for state in list_of_all_states if state not in all_user_states]
         new_data = pandas.DataFrame(missing_states)
         new_data.to_csv("States to learn.csv")
         break
-    elif answer_state in list_of_all_states:
+
+    if answer_state in list_of_all_states:
         if answer_state not in all_user_states:
             all_user_states.append(answer_state)
             state_coordinate = user_state(answer_state)
