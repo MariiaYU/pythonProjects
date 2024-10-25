@@ -67,3 +67,5 @@ class SeparateLine(Turtle):
 print("Hello")
 print("Masala")
 print("test")
+
+input("Test#1")
