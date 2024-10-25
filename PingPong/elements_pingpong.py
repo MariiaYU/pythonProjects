@@ -66,4 +66,5 @@ class SeparateLine(Turtle):
 
 print("Hello")
 print("Masala")
-print("test")
+
+input("test")
