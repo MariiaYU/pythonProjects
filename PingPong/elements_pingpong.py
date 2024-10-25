@@ -1,4 +1,3 @@
-from pprint import PrettyPrinter
 from turtle import Turtle
 
 
