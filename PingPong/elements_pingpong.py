@@ -68,3 +68,4 @@ print("Hello")
 print("Masala")
 
 input("test")
+input("Test#1")
